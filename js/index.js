@@ -96,21 +96,20 @@ for (let link of links) {
   link.style.color = "green";
 }
 
-const styleTesting = document.getElementsByTagName("p");
-for (let paragraph of styleTesting) {
+const topStyleTesting = document.querySelectorAll(
+  ".top-content .text-content p"
+);
+for (let paragraph of topStyleTesting) {
   paragraph.style.border = "1px solid black";
   paragraph.style.padding = "2%";
   paragraph.style.backgroundColor = "lightgray";
 }
-paragraphs[5].style.backgroundColor = "white";
-paragraphs[6].style.backgroundColor = "white";
-paragraphs[7].style.backgroundColor = "white";
-paragraphs[8].style.backgroundColor = "white";
-paragraphs[5].style.border = "none";
-paragraphs[6].style.border = "none";
-paragraphs[7].style.border = "none";
-paragraphs[8].style.border = "none";
-paragraphs[5].style.padding = "0%";
-paragraphs[6].style.padding = "0%";
-paragraphs[7].style.padding = "0%";
-paragraphs[8].style.padding = "0%";
+
+const bottomStyleTesting = document.querySelectorAll(
+  ".bottom-content .text-content p"
+);
+for (let paragraph of bottomStyleTesting) {
+  paragraph.style.border = "1px solid black";
+  paragraph.style.padding = "2%";
+  paragraph.style.backgroundColor = "lightgray";
+}
