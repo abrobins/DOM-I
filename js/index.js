@@ -89,7 +89,7 @@ navBar.prepend(nav1);
 
 const nav2 = document.createElement("a");
 nav2.textContent = "Team";
-navBar.append(nav2);
+navBar.appendChild(nav2);
 
 const links = document.getElementsByTagName("a");
 for (let link of links) {
